@@ -1,2 +1,2 @@
-Sitemap youtube link:
+Sitemap video link:
 https://youtu.be/5niEHjNiyyI
