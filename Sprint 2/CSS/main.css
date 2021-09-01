@@ -1,0 +1,104 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color: white;
+    font-family: 'Tahoma';  
+}  
+
+.login, .signup{  
+    width: 300px;  
+    overflow: hidden;  
+    margin: 0;
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    padding-bottom: 80px;
+    background: #fff3c2; 
+    border-style: solid;
+    border-color: #ffd39e; 
+    
+} 
+
+h2{  
+    text-align: center;  
+    color: #277582;
+    padding-top: 0px;  
+    padding-bottom: 15px;
+    margin-top: 0px
+
+    
+}  
+label{  
+    color: #277582;  
+    font-size: 15px;  
+    padding-bottom: 5px;
+}  
+#address{  
+    width: 300px;  
+    height: 30px;  
+    border-style: solid; 
+    border-color: gray; 
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#pass{  
+    width: 300px;  
+    height: 30px;  
+    border-style: solid;
+    border-color: gray;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 75px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 5px;  
+    padding-left: 7px;  
+    color: white; 
+    font-weight: bold;
+    background: #00b4ff;
+}  
+
+#sign{
+    width: 75px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 5px;  
+    padding-left: 7px;  
+    color: white;  
+    font-weight: bold;
+    background: #00b4ff;
+}
+
+#firstName{
+    width: 300px;  
+    height: 30px;  
+    border-style: solid; 
+    border-color: gray; 
+    border-radius: 3px;  
+    padding-left: 8px;
+}
+
+#lastName{
+    width: 300px;  
+    height: 30px;  
+    border-style: solid; 
+    border-color: gray; 
+    border-radius: 3px;  
+    padding-left: 8px;
+}
+
+
+span{  
+    color: #277582;  
+    font-size: 17px;  
+}  
+
+
+

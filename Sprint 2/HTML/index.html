@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head> 
+    <!-- including the external reference of the style sheet for the dashboard in this html file-->
+    <link rel="stylesheet" type="text/css" href="C:\Users\Admin\Downloads\Sprint 2\CSS\index.css"> 
+    <title>Dashboard</title>
+    <meta charset= "UTF-8">
+</head>
+
+<body>
+  <div class="header"></div>
+      <img src= "C:\Users\Admin\Downloads\Sprint 2\HTML\avatar.png">
+      <h1>HELLO</h1>
+      <h1><span>USER!</span></h1>
+
+      <div>
+        <input type="button" name="logout" id= "logout" value="LOG OUT"> <!--log out button and will redirect to the login page-->
+      </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="sidenav"> <!--will create the side navigation menu -->
+      <ul>
+       <li><a class= "active" href="C:\Users\Admin\Downloads\Sprint 2\HTML\index.html">Dashboard</a></li>
+  	   <li><a href="C:\Users\Admin\Downloads\Sprint 2\HTML\todo.html">To-Do</a></li>
+      </ul>
+	  </div> 
+
+    <div class="content"> <!--dashboard contents will be placed here-->
+      <h3> You have <span class= "pendingNum" style= "color:tomato; font-size: 26px"></span> pending tasks for today.</h3> <!--This will show hoow many pending tasks are there-->
+      <script> //This is javascript code is for getting the number of pending tasks
+          let getLocalStorage= localStorage.getItem("New Todo"); //getting localstorage
+          if(getLocalStorage == null){ //if localStorage is null
+          listArr = []; //creating blank array
+          }else{
+          listArr = JSON.parse(getLocalStorage); //transforming json string into a js object
+          }
+
+          const pendingNum = document.querySelector(".pendingNum");
+          pendingNum.textContent = listArr.length;  //passing the length value in pendingNum
+      </script>
+
+      <h2 style= "text-align:left;float:left;">TODAY</h2>
+
+      <div class= "today"> 
+        <ul>  <!--will show a list of tasks-->
+          <!-- Data comes from local storage -->
+        </ul>
+      </div>
+      <script> //This javascript code is for getting and showing the present tasks
+        const todoList = document.querySelector(".today");
+        let getData= localStorage.getItem("New Todo"); //getting localstorage
+        if(getData == null){ //if localStorage is null
+          listArr = []; //creating blank array
+        }else{
+          listArr = JSON.parse(getData); //transforming json string into a js object
+        }
+        let newLiTag = '';
+        listArr.forEach((element,index) => {
+            newLiTag += `<li> ${element} </li>`;
+        });
+        todoList.innerHTML = newLiTag; //adding new li tag inside ul tag
+      </script>
+      
+      <p style="text-transform: uppercase; position: relative; top: 35px; left: -90px;"><script> document.write(new Date().toDateString()); </script></p>    
+    </div>  
+  </div>  
+</body>
+
+
+</html>
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head> <!-- including the external reference of the style sheet of the sign up page in this html file-->
+	<link rel="stylesheet" type="text/css" href="C:\Users\Admin\Downloads\Sprint 2\CSS\main.css"/> 
+<head>
+<head> 
+	<title>Signup Page</title>
+</head>
+<body>
+	<div class="signup">
+	<!--The form will get the user details -->
+	<form id= "signup" method="get" action="signup.php">
+		<h2 style= "border-bottom-style: groove;">SIGN UP</h2>
+		<label><b>First Name:
+		</b>
+		</label>	
+		<input type="text" name="First Name" id="firstName" placeholder="First Name">
+		<br><br>
+		<label><b>Last Name:
+		</b>
+		</label>
+		<input type="text" name="Last Name" id="lastName" placeholder="Last Name">
+		<br><br>
+		<label><b>Email Address:
+		</b>
+		</label>
+		<input type="text" name="address" id="address" placeholder="Email">
+		<br><br>
+		<label><b>Password:
+		</b>
+		</label>
+		<input type="Password" name="pass" id="pass" placeholder="Password">
+		<br><br>
+		<div style= "text-align: center;">
+			<input type="submit" name= "sign" id="sign" value="SIGN UP">
+		</div>
+		<br><br>
+		<p style= "border-bottom-style: groove; margin-top: 0px;"></p>
+		<span>Already have an account?</span>
+		<input type="button" onclick="location.href = 'login.html'" name="log" id= "log" value="LOGIN"> <!--redirects to log in page -->	
+	</form>
+	</div>
+
+</body>
+</html>

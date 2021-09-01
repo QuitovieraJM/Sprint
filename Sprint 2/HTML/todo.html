@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head> 
+    <!-- including the external reference of the style sheet for the to-do list page in this html file and the icons used-->
+    <link rel="stylesheet" type="text/css" href="C:\Users\Admin\Downloads\Sprint 2\CSS\index.css"> 
+    <link rel="stylesheet" type="text/css" href="C:\Users\Admin\Downloads\Sprint 2\CSS\todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>To-Do</title>
+    <meta charset= "UTF-8">
+</head>
+
+<body>
+  <div class="header"></div>
+      <img src= "C:\Users\Admin\Downloads\Sprint 2\HTML\avatar.png">
+      <h1>HELLO</h1>
+      <h1><span>USER!</span></h1>
+      <div>
+        <input type="button" name="logout" id= "logout" value="LOG OUT"> <!--log out button and will redirect to the login page-->
+      </div>
+    </div>
+
+  <div class="wrapper">
+    <div class="sidenav"> <!--will create the side navigation menu -->
+      <ul>
+       <li><a href="C:\Users\Admin\Downloads\Sprint 2\HTML\index.html">Dashboard</a></li>
+  	   <li><a class= "active" href="C:\Users\Admin\Downloads\Sprint 2\HTML\todo.html">To-Do</a></li>
+      </ul>
+	  </div> 
+
+    <div class="content-container"> <!--container for the to do list page content-->
+      <div class="container"> <!--container for the actual todo list-->
+        <header>TO-DO List</header>
+        <div class= "inputField"> <!--will get the input of the user-->
+          <input type= "text" placeholder= "Add your new task">
+          <button><i class= "fas fa-plus"></i></button>
+        </div>
+
+        <div class= "todoList"> <!--will show the list of tasks-->
+          <ul>
+          <!-- Data comes from local storage -->
+          </ul>
+        </div>
+
+        <div class="footer"> <!--will show the number of pending tasks and be able to clear the whole list-->
+          <span>You have <span class= "pendingNum"></span> pending tasks</span>
+          <button>Clear All</button>
+        </div>
+      </div>
+      <!--links to the JavaScript file of the to do list-->
+      <script src= "C:\Users\Admin\Downloads\Sprint 2\JavaScript\todo.js"></script> 
+    </div>  
+  </div>  
+</body>
+
+
+</html>
